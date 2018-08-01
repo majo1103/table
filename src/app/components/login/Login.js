@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Redirect, Link } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 
 import { client } from "../../Client";
 import "./Login-Form-Dark.css";

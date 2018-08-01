@@ -1,6 +1,6 @@
 import React from "react";
 import { PrivateRoute } from "./PrivateRoute";
-import { Table } from "./table/Table";
+import Table from "../containers/table/Table";
 import { Login } from "./login/Login";
 import { Route, Redirect, Switch } from "react-router-dom";
 
@@ -13,15 +13,15 @@ const NoMatch = ({ location }) => (
   </div>
 );
 
-export class App extends React.Component {
-  render() {
-    return (
-      <Switch>
-        <PrivateRoute path="/table" component={Table} />
-        <Route path="/login" component={Login} />
-        <Route exact path="/" render={() => <Redirect to="/table" />} />
-        <Route component={NoMatch} />
-      </Switch>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Switch>
+      <PrivateRoute path="/table" component={Table} />
+      <Route path="/login" component={Login} />
+      <Route exact path="/" render={() => <Redirect to="/table" />} />
+      <Route component={NoMatch} />
+    </Switch>
+  </div>
+);
+
+export default App;
