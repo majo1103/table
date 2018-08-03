@@ -1,0 +1,39 @@
+{
+  "src_folders": ["tests/e2e"],
+  "output_folder": "reports",
+  "selenium": {
+    "start_process": true,
+    "server_path":
+      "./node_modules/selenium-server/lib/runner/selenium-server-standalone-3.13.0.jar",
+    "port": 4444,
+    "start_session": true,
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/chromedriver/lib/chromedriver",
+      "webdriver.gecko.driver": "./node_modules/geckodriver/bin/geckodriver"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "screenshots": {
+        "enabled": false
+      },
+      "globals": {
+        "waitForConditionTimeout": 5000
+      },
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "nativeEvents": true
+      }
+    },
+    "chrome": {
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "nativeEvents": true
+      }
+    }
+  }
+}
