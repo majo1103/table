@@ -3,4 +3,5 @@
 /.vscode
 /npm-debug.log
 /bin
+/reports
 selenium-server.log

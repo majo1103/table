@@ -19,16 +19,19 @@ const mapDispatchToProps = dispatch => ({
 
 class Table extends React.Component {
   state = {
-    isModalVisible: false
+    isModalVisible: false,
+    modalMessage: ""
   };
 
   fetchData = (state, instance) => {
     this.props.load();
   };
 
-  showDetails = () => {
-    //orginal.name
-    this.setState({ isModalVisible: true });
+  showDetails = (rowData, e) => {
+    this.setState({
+      isModalVisible: true,
+      modalMessage: `His name is ${rowData}`
+    });
   };
 
   close = () => {
@@ -59,7 +62,7 @@ class Table extends React.Component {
               type="checkbox"
               className="checkbox"
               checked={false}
-              onChange={() => this.showDetails()}
+              onChange={e => this.showDetails(original.name, e)}
             />
           );
         },
@@ -75,7 +78,7 @@ class Table extends React.Component {
           onClosed={this.close}
           isOpen={isModalVisible}
         >
-          <p>Here goes some details</p>
+          {this.state.modalMessage}
         </Modal>
         <Overlay isVisible={isModalVisible} />
         <ReactTable
