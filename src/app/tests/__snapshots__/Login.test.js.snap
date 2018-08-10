@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should have the \`button\` element 1`] = `
+Object {
+  "baseElement": <body>
+    <div>
+      <div
+        class="login-dark"
+      >
+        <form>
+          <div
+            class="illustration"
+          >
+            <i
+              class="icon ion-ios-locked-outline"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              name="email"
+              placeholder="Email"
+              type="email"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <input
+              class="form-control"
+              name="password"
+              placeholder="Password"
+              type="password"
+            />
+          </div>
+          <div
+            class="form-group"
+          >
+            <button
+              class="btn btn-primary btn-block"
+              disabled=""
+              type="submit"
+            >
+              Log In
+            </button>
+          </div>
+          <div>
+            <label
+              class="forgot"
+              name="message"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="login-dark"
+    >
+      <form>
+        <div
+          class="illustration"
+        >
+          <i
+            class="icon ion-ios-locked-outline"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <input
+            class="form-control"
+            name="email"
+            placeholder="Email"
+            type="email"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <input
+            class="form-control"
+            name="password"
+            placeholder="Password"
+            type="password"
+          />
+        </div>
+        <div
+          class="form-group"
+        >
+          <button
+            class="btn btn-primary btn-block"
+            disabled=""
+            type="submit"
+          >
+            Log In
+          </button>
+        </div>
+        <div>
+          <label
+            class="forgot"
+            name="message"
+          />
+        </div>
+      </form>
+    </div>
+  </div>,
+  "debug": [Function],
+  "getAllByAltText": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getAllByValue": [Function],
+  "getByAltText": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "getByValue": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryAllByValue": [Function],
+  "queryByAltText": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "queryByValue": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

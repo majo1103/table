@@ -12,7 +12,7 @@ const table = (state = initialState, action) => {
       return Object.assign({}, state, {
         data: action.data,
         isLoading: false,
-        pages: -1
+        pages: 1
       });
     default:
       return state;

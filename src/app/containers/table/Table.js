@@ -3,7 +3,7 @@ import ReactTable from "react-table";
 import "react-table/react-table.css";
 import { connect } from "react-redux";
 import { loadData } from "../../actions/index";
-import { Modal, Overlay } from "react-modal-construction-kit";
+import ReactModal from "react-modal";
 
 const mapStateToProps = state => ({
   data: state.data,
@@ -73,14 +73,9 @@ class Table extends React.Component {
 
     return (
       <div>
-        <Modal
-          onClickOutside={this.close}
-          onClosed={this.close}
-          isOpen={isModalVisible}
-        >
+        <ReactModal onRequestClose={this.close} isOpen={isModalVisible}>
           {this.state.modalMessage}
-        </Modal>
-        <Overlay isVisible={isModalVisible} />
+        </ReactModal>
         <ReactTable
           data={this.props.data}
           pages={this.props.pages}

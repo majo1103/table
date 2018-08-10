@@ -7,7 +7,7 @@ const SRC_DIR = path.resolve(__dirname, "src");
 
 const config = {
   mode: "development",
-  entry: SRC_DIR + "/app/index.js",
+  entry: ["babel-polyfill", SRC_DIR + "/app/index.js"],
   plugins: [
     new HtmlWebpackPlugin({
       title: "PoolingApp",
@@ -37,7 +37,7 @@ const config = {
           {
             loader: "babel-loader",
             options: {
-              presets: ["react", "es2015", "stage-2"]
+              presets: ["react", "es2015", "stage-2", "stage-0"]
             }
           }
         ]
