@@ -1,3 +1,3 @@
-# expereo-app-mateusz
+# table
 
-Mateusz React POC
+react-table POC
