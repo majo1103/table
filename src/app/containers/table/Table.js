@@ -23,11 +23,11 @@ class Table extends React.Component {
     modalMessage: ""
   };
 
-  fetchData = (state, instance) => {
+  fetchData = () => {
     this.props.load();
   };
 
-  showDetails = (rowData, e) => {
+  showDetails = rowData => {
     this.setState({
       isModalVisible: true,
       modalMessage: `His name is ${rowData}`

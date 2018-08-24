@@ -5,3 +5,4 @@
 /bin
 /reports
 selenium-server.log
+/coverage

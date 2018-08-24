@@ -8,7 +8,7 @@ export class Fetch extends React.Component {
         <label htmlFor="name-input">Name</label>
         <input id="name-input" />
         <button>Load Greeting</button>
-        <div data-testid="greeting-text" />
+        <div data-testid="greeting-text">Hello there</div>
       </div>
     );
   }
